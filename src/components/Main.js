@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
+import {
+  Grid,
+  Row,
+  Col
+} from "react-bootstrap"
 
 import '../App.css';
-import CharacterList from '../containers/CharacterListContainer'
+
+import CharacterListContainer from '../containers/CharacterListContainer'
+import SelectedCharacterContainer from '../containers/SelectedCharacterContainer'
+import SlideShow from './SlideShow'
 
 class Main extends Component {
   render() {
@@ -9,14 +17,20 @@ class Main extends Component {
       <div className="App">
         <div className="App-header">
           <img src="http://cdn.pcwallart.com/images/game-of-thrones-logo-png-wallpaper-4.jpg"
-          height="50%"
-          width="50%"
+          height="100px"
         />
-          <h2>Welcome to GOT Spoliers</h2>
         </div>
-        <div className="App-intro">
-          <CharacterList/>
-        </div>
+        <Grid style={{marginTop: "50px"}}>
+           <Row className="show-grid" >
+             <Col sm={6}>
+              <CharacterListContainer/>
+            </Col>
+             <Col sm={6}>
+               <SelectedCharacterContainer/>
+            </Col>
+          </Row>
+        </Grid>
+        <SlideShow/>
       </div>
     );
   }
