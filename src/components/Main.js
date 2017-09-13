@@ -31,6 +31,10 @@ class Main extends Component {
           </Row>
         </Grid>
         <SlideShow/>
+         <span style={{
+            color: "black",
+            marginTop: "50px",
+         }}>Source Code: <a href="https://github.com/AaronStackBarnes/redux-setup-tutorial" target="_blank">github.com/AaronStackBarnes/redux-setup-tutorial</a> | Portfolio: <a href="http://www.AaronStackBarnes.com" target="_blank">AaronStackBarnes.com</a> </span>
       </div>
     );
   }
