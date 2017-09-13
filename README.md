@@ -1,5 +1,7 @@
 # Initial React Redux Setup
 
+A live [Demo](https://redux-setup.herokuapp.com/) hosted on Heroku.
+
 ![1](/public/img/1.png?raw=true)
 1. Create your react app however you like. I use create react app here.
 <br/> <br/> <br/>
@@ -58,7 +60,7 @@
 19. A cool thing about redux is passing state between sister components. Lets do that.
 <br/> <br/> <br/>
 ![20](/public/img/20.png?raw=true)
-20. To do this we need to create actions. Action types are not needed but using this format has many advantages. For more information on why to use action types [ redux.js.org](http://redux.js.org/docs/recipes/ReducingBoilerplate.html).
+20. To do this we need to create actions. Action types are not needed but using this format has many advantages. For more information on why to use action types [redux.js.org](http://redux.js.org/docs/recipes/ReducingBoilerplate.html).
 <br/> <br/> <br/>
 ![21](/public/img/21.png?raw=true)
 21. Create a show spoiler action and its corresponding action type.
